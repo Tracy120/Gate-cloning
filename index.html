@@ -182,5 +182,100 @@
       MORE EVENTS VIA PENN TODAY
     </h3>
 </div>
+<section class="px-6 md:px-12 py-16  bg-gray-100 flex flex-col items-center">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl w-full">
+      
+      <!-- First Container with Image Heading -->
+      <div class="bg-white p-12 rounded-lg shadow-lg flex flex-col justify-between items-center text-center w-full max-w-2xl lg:max-w-3xl min-h-[380px]">
+          <img src="Inspiring-Impact-Campaign-Logo.png" alt="Explore More Opportunities" class="w-auto max-w-xs md:max-w-sm">
+          <p class="text-gray-700 mt-6 text-lg leading-relaxed">
+              Your support ignites change locally and globally, transforming Penn into a powerful engine that advances knowledge for society's greatest good.
+          </p>
+          <button class="mt-8 px-8 py-4 border-2 border-gray-200 text-blue-900 font-semibold rounded-full hover:bg-blue-900 hover:text-white transition-all duration-300">
+              SUPPORT PENN
+          </button>
+      </div>
+
+      <!-- Second Container with Aligned Heading -->
+      <div class="bg-blue-950 p-12 rounded-lg shadow-lg flex flex-col justify-between items-center text-center w-full max-w-2xl lg:max-w-3xl min-h-[380px]">
+          <img src="empty.png" alt="Spacer" class="w-auto max-w-xs md:max-w-sm invisible">
+          <h2 class="text-4xl font-bold text-white hover:underline transition-all duration-300">Supporting Our Community</h2>
+          <p class="text-white mt-6 text-lg leading-relaxed">
+              During these challenging times, Penn remains committed to supporting students, faculty, and staff and to sharing information with our larger community of alumni, parents, and friends.
+          </p>
+          <button class="mt-8 px-8 py-4 border-2 border-blue-600 text-white font-semibold rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300">
+              Learn More
+          </button>
+      </div>
+
+  </div>
+<!-- Swiper.js CDN -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<section class="relative w-full">
+    <!-- Full-width Main Image (Background) -->
+    <div class="w-full h-[300px] md:h-[600px] lg:h-[700px] relative">
+        <img src="blue-pattern-bg.png" alt="Main Image" class="w-full h-full object-cover absolute top-0 left-0 z-0">
+    </div>
+
+    <!-- Image Carousel -->
+    <div class="relative -mt-52 md:-mt-72 lg:-mt-80 max-w-7xl mx-auto z-10">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Image 1 -->
+                <div class="swiper-slide">
+                    <img src="research-innovation-singh.jpeg" alt="Image 1" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                </div>
+                <!-- Image 2 -->
+                <div class="swiper-slide">
+                    <img src="covenant.jpeg" alt="Image 2" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                </div>
+                <!-- Image 3 -->
+                <div class="swiper-slide">
+                    <img src="mark-alan-hughes-kleinman.jpeg" alt="Image 3" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                </div>
+                <!-- Image 4 -->
+                <div class="swiper-slide">
+                    <img src="diversity-jackson-hbo-editing.jpeg" alt="Image 4" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                </div>
+                <!-- Image 5 -->
+                <div class="swiper-slide">
+                    <img src="detlefsen-classroom-1.jpeg" alt="Image 5" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev text-gray-700 hover:text-black"></div>
+            <div class="swiper-button-next text-gray-700 hover:text-black"></div>
+
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination mt-4"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Swiper.js Configuration -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+</script>
+
 </body>
 </html>
