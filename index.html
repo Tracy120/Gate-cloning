@@ -214,34 +214,56 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <section class="relative w-full">
-    <!-- Full-width Main Image (Background) -->
-    <div class="w-full h-[300px] md:h-[600px] lg:h-[700px] relative">
-        <img src="blue-pattern-bg.png" alt="Main Image" class="w-full h-full object-cover absolute top-0 left-0 z-0">
+    <!-- Full-width Main Image (Background) with Overlay Text -->
+    <div class="w-full h-[700px] relative flex flex-col items-center text-center justify-center">
+        <div class="absolute top-20 z-10 text-white px-4">
+            <h2 class="text-4xl font-bold">Penn Priorities</h2>
+            <p class="text-lg mt-4 max-w-2xl">
+                A look at a few of our big-picture priorities that improve Penn as we create 
+                knowledge to benefit the world.
+            </p>
+        </div>
+        <img src="blue-pattern-bg.png" alt="Main Background" class="w-full h-full object-cover absolute top-6 left-0 z-0">
     </div>
 
-    <!-- Image Carousel -->
-    <div class="relative -mt-52 md:-mt-72 lg:-mt-80 max-w-7xl mx-auto z-10">
+    <!-- Image Carousel with Overlays -->
+    <div class="relative -mt-48 md:-mt-72 max-w-7xl mx-auto z-10">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <!-- Image 1 -->
-                <div class="swiper-slide">
-                    <img src="research-innovation-singh.jpeg" alt="Image 1" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                <div class="swiper-slide relative">
+                    <img src="research-innovation-singh.jpeg" alt="Research & Innovation" class="w-full h-[500px] md:h-[500px] object-cover rounded-lg">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                        <h3 class="text-lg font-bold">Research & Innovation</h3>
+                    </div>
                 </div>
                 <!-- Image 2 -->
-                <div class="swiper-slide">
-                    <img src="covenant.jpeg" alt="Image 2" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                <div class="swiper-slide relative">
+                    <img src="covenant.jpeg" alt="Covenant" class="w-full h-[500px] md:h-[500px] object-cover rounded-lg">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                        <h3 class="text-lg font-bold">Covenant for the Future</h3>
+                    </div>
                 </div>
                 <!-- Image 3 -->
-                <div class="swiper-slide">
-                    <img src="mark-alan-hughes-kleinman.jpeg" alt="Image 3" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                <div class="swiper-slide relative">
+                    <img src="mark-alan-hughes-kleinman.jpeg" alt="Innovation Leaders" class="w-full h-[500px] md:h-[500px] object-cover rounded-lg">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                        <h3 class="text-lg font-bold">Innovation Leadership</h3>
+                    </div>
                 </div>
                 <!-- Image 4 -->
-                <div class="swiper-slide">
-                    <img src="diversity-jackson-hbo-editing.jpeg" alt="Image 4" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                <div class="swiper-slide relative">
+                    <img src="diversity-jackson-hbo-editing.jpeg" alt="Diversity in Tech" class="w-full h-[500px] md:h-[500px] object-cover rounded-lg">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                        <h3 class="text-lg font-bold">Diversity & Inclusion</h3>
+                    </div>
                 </div>
                 <!-- Image 5 -->
-                <div class="swiper-slide">
-                    <img src="detlefsen-classroom-1.jpeg" alt="Image 5" class="w-full h-[350px] md:h-[500px] lg:h-[600px] object-cover rounded-lg">
+                <div class="swiper-slide relative">
+                    <img src="detlefsen-classroom-1.jpeg" alt="Classroom Innovations" class="w-full h-[00px] md:h-[500px] object-cover rounded-lg">
+                    <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                        <h3 class="text-lg font-bold">Classroom Innovations</h3>
+                    </div>
                 </div>
             </div>
 
@@ -249,8 +271,8 @@
             <div class="swiper-button-prev text-gray-700 hover:text-black"></div>
             <div class="swiper-button-next text-gray-700 hover:text-black"></div>
 
-            <!-- Pagination Dots -->
-            <div class="swiper-pagination mt-4"></div>
+            <!-- Pagination Dots Adjusted Lower -->
+            <div class="swiper-pagination mt-6"></div>
         </div>
     </div>
 </section>
@@ -258,8 +280,8 @@
 <!-- Swiper.js Configuration -->
 <script>
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 10,
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -276,6 +298,34 @@
     }
   });
 </script>
+
+<section class="py-16 bg-gray-100 text-center">
+  <!-- Title -->
+  <h1 class="text-4xl font-bold text-gray-900 mb-10">Stay Connected</h1>
+
+  <!-- Three-column layout -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center px-6 ml-7">
+      <!-- Left Image -->
+      <div>
+          <img src="art-matters-fantine-sq.png" alt="Left Image" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+      </div>
+
+      <!-- Middle Content -->
+      <div class="text-left w-full h-[500px] object-cover rounded-lg shadow-lg  bg-blue-950 ">
+          <p class="text-lg text-white mb-4   ">
+            Scott Hensley of Penn Medicine says, “The worst thing we can do is be flat-footed and unprepared, because this virus does represent a true pandemic risk.”
+            Faculty members from @PennMedicine and @PennVetSchool are working on a new vaccine for the H5N1 virus. They are studying how the virus is transmitted and assisting the state in testing samples from birds and mammals. bit.ly/40HbF…
+        
+      </div>
+
+      <!-- Right Image -->
+      <div>
+          <img src="penn_commonsspringsem2025-sq.png" alt="Right Image" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+      </div>
+  </div>
+</section>
+
+
 
 </body>
 </html>
