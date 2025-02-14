@@ -887,6 +887,9 @@
   .mr-12 {
     margin-right: calc(var(--spacing) * 12);
   }
+  .mr-20 {
+    margin-right: calc(var(--spacing) * 20);
+  }
   .mr-36 {
     margin-right: calc(var(--spacing) * 36);
   }
@@ -923,6 +926,9 @@
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
+  }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
@@ -943,6 +949,42 @@
   }
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
+  }
+  .ml-22 {
+    margin-left: calc(var(--spacing) * 22);
+  }
+  .ml-24 {
+    margin-left: calc(var(--spacing) * 24);
+  }
+  .ml-28 {
+    margin-left: calc(var(--spacing) * 28);
+  }
+  .ml-32 {
+    margin-left: calc(var(--spacing) * 32);
+  }
+  .ml-40 {
+    margin-left: calc(var(--spacing) * 40);
+  }
+  .ml-44 {
+    margin-left: calc(var(--spacing) * 44);
+  }
+  .ml-48 {
+    margin-left: calc(var(--spacing) * 48);
+  }
+  .ml-50 {
+    margin-left: calc(var(--spacing) * 50);
+  }
+  .ml-56 {
+    margin-left: calc(var(--spacing) * 56);
+  }
+  .ml-60 {
+    margin-left: calc(var(--spacing) * 60);
+  }
+  .ml-80 {
+    margin-left: calc(var(--spacing) * 80);
+  }
+  .ml-auto {
+    margin-left: auto;
   }
   .box-border {
     box-sizing: border-box;
@@ -1115,12 +1157,6 @@
   .h-\[0px\] {
     height: 0px;
   }
-  .h-\[300px\] {
-    height: 300px;
-  }
-  .h-\[34px\] {
-    height: 34px;
-  }
   .h-\[40px\] {
     height: 40px;
   }
@@ -1129,6 +1165,12 @@
   }
   .h-\[200px\] {
     height: 200px;
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
+  .h-\[34px\] {
+    height: 34px;
   }
   .h-\[350px\] {
     height: 350px;
@@ -1142,6 +1184,9 @@
   .h-\[500px\] {
     height: 500px;
   }
+  .h-\[600px\] {
+    height: 600px;
+  }
   .h-\[700px\] {
     height: 700px;
   }
@@ -1150,9 +1195,6 @@
   }
   .h-\[6000px\] {
     height: 6000px;
-  }
-  .h-\[600px\] {
-    height: 600px;
   }
   .h-auto {
     height: auto;
@@ -1208,6 +1250,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
@@ -1237,6 +1282,15 @@
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-26 {
+    width: calc(var(--spacing) * 26);
+  }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
@@ -1763,6 +1817,13 @@
       margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-4 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -2097,6 +2158,9 @@
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
+  .bg-blue-700 {
+    background-color: var(--color-blue-700);
+  }
   .bg-blue-800 {
     background-color: var(--color-blue-800);
   }
@@ -2367,6 +2431,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
@@ -3381,6 +3448,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .sm\:px-12 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+  }
   .md\:left-\[15\%\] {
     @media (width >= 48rem) {
       left: 15%;
@@ -3404,6 +3476,11 @@
   .md\:-mt-\[280px\] {
     @media (width >= 48rem) {
       margin-top: calc(280px * -1);
+    }
+  }
+  .md\:mt-0 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 0);
     }
   }
   .md\:mt-4 {
@@ -3496,9 +3573,19 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .md\:grid-cols-4 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:justify-end {
+    @media (width >= 48rem) {
+      justify-content: flex-end;
     }
   }
   .md\:p-12 {
