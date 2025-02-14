@@ -14,99 +14,184 @@
         }
     </script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-50 text-gray-900">
     <!-- Announcement Banner -->
-    <div class="bg-blue-900 text-white py-4 text-center px-4">
+    <div class="bg-blue-900 text-white py-4 text-center px-6">
         <p class="text-lg font-semibold">
-            <a href="#" class="underline">On Friday, February 14, 2025 the University will suspend normal operations for the Eagles victory parade</a>
+            <a href="#" class="underline hover:text-gray-300 transition">On Friday, February 14, 2025, the University will suspend normal operations for the Eagles victory parade</a>
         </p>
         <p class="text-sm mt-1">Normal operations will resume Monday, February 17, 2025</p>
     </div>
-    
+
     <!-- News Section -->
     <section class="px-6 md:px-12 py-12 bg-white">
         <div class="flex justify-between items-center border-b pb-4 mb-6">
-            <h2 class="font-bold text-2xl text-gray-800">News</h2>
+            <h2 class="text-2xl font-bold text-gray-800">Latest News</h2>
             <a href="#" class="text-blue-600 font-semibold hover:underline">View All →</a>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Large News Item -->
-            <div class="bg-gray-100 p-6 rounded-lg group">
-                <img src="pavilion-gift-teaser.jpeg" alt="Health Science" class="w-full h-96 object-cover rounded-lg mt-4 transition-transform duration-300 hover:scale-105">
-                <h3 class="text-center text-md font-semibold text-red-500 mt-3">Health Science</h3>
-                <p class="text-blue-500 text-lg font-bold mt-5 text-center group-hover:underline">
-                    Catherine and Anthony Clifton make transformational gift to accelerate patient care, research, and education at Penn Medicine
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Featured News -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md group">
+                <img src="pavilion-gift-teaser.jpeg" alt="Health Science" class="w-full h-72 md:h-96 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                <h3 class="text-md font-semibold text-red-500 text-center mt-3">Health Science</h3>
+                <p class="text-blue-500 text-lg font-bold mt-5 text-center group-hover:underline transition">
+                    Catherine and Anthony Clifton make transformational gift to accelerate patient care, research, and education at Penn Medicine.
                 </p>
             </div>
-            
+
             <!-- Smaller News Items -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="bg-gray-100 p-4 rounded-lg group">
-                    <img src="epstein-jon-teaser.jpeg" alt="Research Lab" class="w-full h-56 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-center text-md font-semibold text-red-500 mt-3">Health Science</h3>
-                    <p class="text-blue-500 text-sm mt-2 text-center group-hover:underline">
-                        Jonathan A. Epstein named head of Perelman School of Medicine and Penn Health System
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md group">
+                    <img src="epstein-jon-teaser.jpeg" alt="Research Lab" class="w-full h-48 md:h-56 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-md font-semibold text-red-500 text-center mt-3">Health Science</h3>
+                    <p class="text-blue-500 text-sm mt-2 text-center group-hover:underline transition">
+                        Jonathan A. Epstein named head of Perelman School of Medicine and Penn Health System.
                     </p>
                 </div>
-                <div class="bg-gray-100 p-4 rounded-lg group">
-                    <img src="preservation-campus-teaser.jpeg" alt="Vaccine Study" class="w-full h-56 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-center text-md font-semibold text-red-500 mt-3">Arts, Humanities, & Social Sciences</h3>
-                    <p class="text-blue-500 text-sm mt-2 text-center group-hover:underline">
-                        Penn prepares to mark America’s 250th birthday
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md group">
+                    <img src="preservation-campus-teaser.jpeg" alt="Vaccine Study" class="w-full h-48 md:h-56 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-md font-semibold text-red-500 text-center mt-3">Arts & Humanities</h3>
+                    <p class="text-blue-500 text-sm mt-2 text-center group-hover:underline transition">
+                        Penn prepares to mark America’s 250th birthday.
                     </p>
                 </div>
-                <div class="bg-gray-100 p-4 rounded-lg group">
-                    <img src="america-250-teaser-social-main.jpeg" alt="Hospital Care" class="w-full h-56 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-center text-md font-semibold text-red-500 mt-3">Arts, Humanities, & Social Sciences</h3>
-                    <p class="text-blue-500 text-sm mt-2 text-center group-hover:underline">
-                        A rare on-campus assignment for preservation students holds ‘small revelations’
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md group">
+                    <img src="america-250-teaser-social-main.jpeg" alt="Hospital Care" class="w-full h-48 md:h-56 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-md font-semibold text-red-500 text-center mt-3">Preservation</h3>
+                    <p class="text-blue-500 text-sm mt-2 text-center group-hover:underline transition">
+                        A rare on-campus assignment for preservation students holds ‘small revelations’.
                     </p>
                 </div>
-                <div class="bg-gray-100 p-4 rounded-lg group">
-                    <img src="chan-vanessa-teaser.jpeg" alt="Public Awareness" class="w-full h-56 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
-                    <h3 class="text-center text-md font-semibold text-red-500 mt-3">Science & Technology</h3>
-                    <p class="text-blue-500 text-sm mt-2 text-center group-hover:underline">
-                        Vanessa Chan bridges the gap between innovation and the market
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md group">
+                    <img src="chan-vanessa-teaser.jpeg" alt="Public Awareness" class="w-full h-48 md:h-56 object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+                    <h3 class="text-md font-semibold text-red-500 text-center mt-3">Science & Technology</h3>
+                    <p class="text-blue-500 text-sm mt-2 text-center group-hover:underline transition">
+                        Vanessa Chan bridges the gap between innovation and the market.
                     </p>
                 </div>
-                <div class="col-span-2 text-center mt-6">
-                  <h3 class="text-lg font-semibold text-red-500 cursor-pointer hover:underline">
-                      More News via Penn Today
-                  </h3>
-              </div>
-              
             </div>
         </div>
+
+        <!-- More News Link -->
+        <div class="col-span-2 text-center mt-8">
+            <h3 class="text-lg font-semibold text-red-500 cursor-pointer hover:underline">
+                More News via Penn Today
+            </h3>
+        </div>
     </section>
-    <section class="relative w-full h-[600px] mt-12">
-      <img src="penn-center-innovation.jpeg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
-      
-      <!-- Blue Container -->
-      <div class="absolute left-[15%] top-1/2 transform -translate-y-1/2 bg-blue-900 text-white p-12 rounded-lg max-w-lg shadow-lg min-h-[480px] flex flex-col justify-center items-center text-center">
-          <h5 class="text-sm uppercase tracking-wide font-semibold mt-4">CAMPUS & COMMUNITY</h5>
-          
-          <!-- Title with underline effect on each line -->
-          <h3 class="text-2xl font-bold mt-2 relative group">
-              <span class="block relative">
-                  Penn Center for Innovation
-                  <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </span>
-              <span class="block relative">
-                  celebrates 10 years
-                  <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </span>
-          </h3>
-  
-          <p class="mt-4 text-lg">The University’s nexus for technology transfer supports researchers in their innovative efforts, from CAR T to mRNA advancements that have dramatically reshaped the world.</p>
-          
-          <!-- Learn More Button -->
-          <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-full font-semibold transition border-2 border-blue-600 hover:bg-white hover:text-blue-600">
-              Learn More
-          </button>
-      </div>
-  </section>
-  
-  
-  
+
+    <!-- Featured Section -->
+    <section class="relative w-full h-[500px] md:h-[600px] mt-12">
+        <img src="penn-center-innovation.jpeg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
+        
+        <!-- Blue Container -->
+        <div class="absolute left-[10%] md:left-[15%] top-1/2 transform -translate-y-1/2 bg-blue-900 text-white p-6 md:p-12 rounded-lg shadow-lg max-w-md md:max-w-lg min-h-[400px] md:min-h-[480px] flex flex-col justify-center items-center text-center">
+            <h5 class="text-sm uppercase tracking-wide font-semibold mt-2 md:mt-4">Campus & Community</h5>
+            
+            <!-- Title with underline effect -->
+            <h3 class="text-xl md:text-2xl font-bold mt-2 relative group">
+                <span class="block relative">
+                    Penn Center for Innovation
+                    <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </span>
+                <span class="block relative">
+                    Celebrates 10 Years
+                    <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                </span>
+            </h3>
+
+            <p class="mt-4 text-sm md:text-lg">The University’s nexus for technology transfer supports researchers in their innovative efforts, from CAR T to mRNA advancements that have dramatically reshaped the world.</p>
+            
+            <!-- Learn More Button -->
+            <button class="mt-6 bg-blue-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-full font-semibold transition border-2 border-blue-600 hover:bg-white hover:text-blue-600">
+                Learn More
+            </button>
+        </div>
+    </section>
+    <section class="px-6 md:px-12 py-12 bg-gray-50">
+    <h2 class="text-2xl font-bold text-gray-800 mb-8">Upcoming Events</h2>
+
+    <!-- Event Containers -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Event 1 with Image -->
+        <div class="bg-white p-6 rounded-lg shadow-lg group">
+            <!-- Image Section with Date on the right -->
+            <div class="relative w-full h-80 mb-6">
+                <img src="grad-center-locust-walk.jpeg" alt="Event 1" class="w-full h-full object-cover rounded-lg">
+                
+                <!-- Smaller Date Box on the right side of the image -->
+                <div class="absolute top-4 right-4 bg-white p-1.5 rounded-lg shadow-lg">
+                    <!-- FEB and 19 separated into two parts -->
+                    <div class="text-red-500 font-bold text-base">FEB</div>
+                    <div class="text-white bg-red-500 font-bold text-3xl mt-1 p-1 rounded-lg">19</div>
+                </div>
+            </div>
+
+            <!-- Details Section below the image -->
+            <div>
+                <!-- TALKS Title -->
+                <h6 class="text-lg font-semibold text-gray-700">TALKS</h6>
+
+                <!-- Event Title with hover underline -->
+                <h3 class="text-xl font-bold text-grey-500 mt-10 group-hover:underline cursor-pointer">Managing Presentation Anxiety</h3>
+
+                <!-- Event Description -->
+                <p class="text-sm text-gray-600 mt-2"> Communication Within the Curriculum Associate Director Sue Weber offers tips and tricks to control anxiety during public speaking. A Penn graduate student ID is required.</p>
+
+             
+            </div>
+            <div class="col-span-2 text-center mt-20">
+              <h3 class="text-left font-semibold text-grey-500 cursor-pointer hover:underline ">
+                  More News via Penn Today
+              </h3>
+          </div>
+        </div>
+
+        <!-- Event 2 without Image -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <!-- Date -->
+            <div class="flex items-center">
+                <span class="text-red-500 font-bold text-2xl mr-2">FEB</span>
+                <span class="text-3xl font-bold text-gray-800">20</span>
+            </div>
+
+            <!-- TALKS Title -->
+            <h6 class="text-lg font-semibold text-gray-700 mt-2">TALKS</h6>
+
+            <!-- Event Title with hover underline -->
+            <h3 class="text-xl font-bold text-blue-700 mt-4 group-hover:underline cursor-pointer">Event Title 2</h3>
+
+            <!-- Event Description -->
+            <p class="text-sm text-gray-600 mt-2">This is a brief description of the event. It will give an idea of what the event is about, including key topics or speakers.</p>
+
+            <!-- Underlined h4 Title with hover effect -->
+            <h4 class="text-lg text-blue-600 font-semibold mt-4 group-hover:underline cursor-pointer">Event Details</h4>
+        </div>
+
+        <!-- Event 3 without Image -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <!-- Date -->
+            <div class="flex items-center">
+                <span class="text-red-500 font-bold text-2xl mr-2">FEB</span>
+                <span class="text-3xl font-bold text-gray-800">21</span>
+            </div>
+
+            <!-- TALKS Title -->
+            <h6 class="text-lg font-semibold text-gray-700 mt-2">TALKS</h6>
+
+            <!-- Event Title with hover underline -->
+            <h3 class="text-xl font-bold text-blue-700 mt-4 group-hover:underline cursor-pointer">Event Title 3</h3>
+
+            <!-- Event Description -->
+            <p class="text-sm text-gray-600 mt-2">This is a brief description of the event. It will give an idea of what the event is about, including key topics or speakers.</p>
+
+            <!-- Underlined h4 Title with hover effect -->
+            <h4 class="text-lg text-blue-600 font-semibold mt-4 group-hover:underline cursor-pointer">Event Details</h4>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
